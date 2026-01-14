@@ -35,6 +35,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
+          debug: true 
           script: |
             docker image pull marthativiano/isa-oct25-cicd-docker:flaskapp
             docker container stop flask || true
