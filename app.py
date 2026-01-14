@@ -1,7 +1,7 @@
 from flask import Flask
 
 app = Flask(__name__)
-@app.router('/')
+@app.route('/')
 def hola():
     return "<h1>¡HOLA MARTHA Lograste con exito la tarea de I.A Integracion de sistemas y arquitectura!<h1>"
 
