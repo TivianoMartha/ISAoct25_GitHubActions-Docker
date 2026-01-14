@@ -40,4 +40,4 @@ jobs:
             docker image pull marthativiano/isa-oct25-cicd-docker:flaskapp
             docker container stop flask || true
             docker container rm flask || true
-            docker container run -d --name flask -p 5000:5000 marthativiano/isa-oct25-cicd-docker:flaskapp
+            docker container run -d --name flask -p 80:5000 marthativiano/isa-oct25-cicd-docker:flaskapp
